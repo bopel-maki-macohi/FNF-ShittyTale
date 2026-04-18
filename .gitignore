@@ -8,7 +8,7 @@ art/buildScripts/test_x64-debug-officialrelease.bat
 ### VS Code
 export/*
 .vscode/*
-.haxelib/
+.haxelib/       
 .github/
 *.code-workspace
 vs_Community.exe

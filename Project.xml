@@ -30,7 +30,6 @@
 	
 	<define name="MULTITHREADED_LOADING" /> <!-- UNCOMMENTING THIS LINE WILL ENABLE MULTITHREADED LOADING, WHICH IMPROVES LOADING TIMES, BUT APPARENTLY CAN FREEZE THE GAME ON SONG LOAD IN OLDER PCs? -->
 	<define name="SHOW_LOADING_SCREEN" />
-	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE THE PSYCH LOGO FROM LOADING SCREEN -->
 
 	<section if="officialBuild">
 		<define name="TITLE_SCREEN_EASTER_EGG"/>
@@ -84,7 +83,7 @@
 		<assets path="assets/translations" rename="assets" exclude="*.mp3"  unless="web"/>
 	</section>
 
-	<define name="CHECK_FOR_UPDATES" if="desktop officialBuild"/>
+	<!-- <define name="CHECK_FOR_UPDATES" if="desktop officialBuild"/> -->
 
 	<section if="MODS_ALLOWED">
 		<assets path='example_mods' rename='mods' embed='false' type='template' unless="mac"/>
